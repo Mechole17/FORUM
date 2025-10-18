@@ -62,7 +62,7 @@ export default function Homepage(props){
             {user? <>
             <button style={{marginLeft: 'auto', marginTop: '10px', width: '100px', padding: '5px', marginRight: '10px', borderRadius: '10px', backgroundColor: '#FFF'}} onClick={()=>{setUser(null)}}>Logout</button>
             <div style={{display: 'flex', flexDirection: 'column', width: '505px', margin: '10px', padding: '10px', backgroundColor: '#1d2033ff', justifyContent: 'center', borderRadius: '10px'}}>
-                <input type="text" ref={userPost} style={{ borderRadius: '10px',height: '40px', padding: '10px'}} placeholder="What's on your mind?"/>
+                <textarea type="text" ref={userPost} style={{ borderRadius: '10px',height: '40px', padding: '10px'}} placeholder="What's on your mind?"/>
                 <button onClick={()=>addPost()} style={{padding: '5px', width: '100px', borderRadius: '10px', margin: '10px', cursor: 'pointer'}}>Post</button>
             </div>
 
